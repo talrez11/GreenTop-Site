@@ -9,7 +9,31 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<header>
+				<div class="menu">
+
+					<span class="logo"></span>
+
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+					/>
+
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+					</a>
+
+				</div>
+
+				<video autoplay="autoplay" loop="loop">
+					<source src="site/images/header/video.mp4" type="video/mp4">
+				</video>
+
+			</header>
 		</body>
 	</html>
 </document>
