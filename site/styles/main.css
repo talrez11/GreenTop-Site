@@ -1,12 +1,14 @@
 /**
  * Main Style Sheet
- * Site Name
+ * Green Top Energy
  *
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
- * Authors:
+ * Authors: Tal Reznic
  */
 
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
 body {
-	background-color: white;
-	color: black;
+  font-family: 'open Sans Hebrew' serif;
+  color:#41484b;
 }
