@@ -35,15 +35,69 @@
 
 				</div>
 
-				<video autoplay="autoplay" loop="loop">
-					<source src="site/images/header/video.mp4" type="video/mp4">
-				</video>
+					<cms:module
+						name="youtube"
+						action="show"
+						text_id="green_top"
+						width="20000"
+						height="900"
+						embed="1"
+						target="video_player"
+						theme="dark"
+						controls="0"
+						autohide="1"
+						autoplay="1"
+						loop="1"
+						/>
+
 
 			</header>
 
-			<div class="wrap">
+			<div class="wrap gradient">
+				<div class="form_wrap">
+					<h2><cms:text constant="form_title"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+					/>
+				</div>
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about_article"
+					template="parts/article.xml"
+				/>
+
+				<a href="">
+					<cms:text constant="btn"/>
+				</a>
 
 			</div>
+			<!-- System Section -->
+			<div class="wrap white">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="system_article"
+					template="parts/article.xml"
+				/>
+			</div>
+
+			<!--  -->
+
+			<div class="wrap">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="gauge_article"
+					template="parts/article.xml"
+				/>
+			</div>
+
+
+
 		</body>
 	</html>
 </document>
