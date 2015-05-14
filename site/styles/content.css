@@ -510,9 +510,6 @@ div.system_feature div.bottom div {
 
 }
 
-div.system_feature div.bottom div p {
-	font-size:1em;
-}
 
 div.system_feature div.bottom div p:last-of-type {
 	padding-top: 10px;
