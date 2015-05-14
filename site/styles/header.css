@@ -53,6 +53,10 @@ header > a {
 	background-size: 100px 100px;
 	width: 100px;
 	height: 100px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	-ms-transform: translateZ(0);
 	transform: translateZ(0);
 	position: relative;
 	-webkit-animation:bounce 1s infinite;
@@ -74,6 +78,10 @@ header div.menu {
 	background-color: rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 	z-index: 10000;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	-ms-transform: translateZ(0);
 	transform: translateZ(0);
 	overflow: hidden;
 }
@@ -96,6 +104,8 @@ header div.menu form {
 	vertical-align: middle;
 	padding-left: 15px;
 	padding-right: 15px;
+	opacity: 0;
+	transition:all 0.3s;
 }
 
 header div.menu form label {
