@@ -75,6 +75,7 @@
 				</a>
 
 			</div>
+
 			<!-- System Section -->
 			<div class="wrap white">
 				<cms:module
@@ -85,9 +86,14 @@
 				/>
 			</div>
 
-			<!--  -->
-
+			<!-- Product -->
 			<div class="wrap">
+
+				<div>
+					<span></span>
+					<span><cms:text constant="product"/></span>
+				</div>
+
 				<cms:module
 					name="articles"
 					action="show"
@@ -96,7 +102,85 @@
 				/>
 			</div>
 
+			<!-- Gallery -->
+			<div class="clients wrap">
 
+				<cms:module
+					name="gallery"
+					action="show_group_list"
+					container="customers"
+					template="parts/groups.xml"
+					/>
+
+			</div>
+
+			<!-- system features -->
+			<div class="system_feature wrap">
+
+				<h2><cms:text constant="system_feature_title"/></h2>
+
+				<div class="articles">
+					<cms:module
+						name="articles"
+						action="show_group"
+						text_id="feature_articles"
+						template="parts/show_articles.xml"
+
+					/>
+				</div>
+				<div class="bottom">
+
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="feature4"
+						template="parts/article.xml"
+
+					/>
+
+				</div>
+
+			</div>
+
+			<!-- Deals Section -->
+			<div class="deals wrap">
+
+				<h2><cms:text constant="deals_title"/></h2>
+				<cms:module
+						name="articles"
+						action="show"
+						text_id="green_deal"
+						template="parts/article.xml"
+
+					/>
+
+				<cms:module
+						name="articles"
+						action="show"
+						text_id="gold_deal"
+						template="parts/article.xml"
+
+					/>
+
+				<cms:module
+						name="articles"
+						action="show"
+						text_id="extra_deal"
+						template="parts/article.xml"
+
+					/>
+
+			</div>
+
+			<div class="wrap blue">
+				<span><cms:text constant="header"/></span>
+				<span><cms:text constant="header_desc"/></span>
+			</div>
+
+			<!-- footer Section -->
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
 
 		</body>
 	</html>
