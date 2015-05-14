@@ -49,6 +49,31 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
+
+	// Setting fixed menu color
+	var menu = $('header div.menu');
+	var form = $('header div.menu form');
+	var target1 = $('div.about_article h2:first-of-type').offset().top - 200;
+	var target = $('div.form_wrap').offset().top;
+
+	$(window).scroll(function(event) {
+		if( $(window).scrollTop() > target ) {
+
+			menu.css('background-color','white');
+
+		} else {
+
+		    menu.css('background-color','rgba(255, 255, 255, 0.7)');
+		}
+	});
+
+	$(window).scroll(function(event) {
+		if( $(window).scrollTop() > target1) {
+			form.css('opacity','1');
+		} else {
+			form.css('opacity','0');
+		}
+	});
 };
 
 
