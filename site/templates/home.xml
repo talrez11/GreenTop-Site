@@ -5,15 +5,27 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:module name="youtube" action="include_api_script"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+		<cms:desktop>
 			<header>
+				<cms:module
+						name="youtube"
+						action="show"
+						text_id="green_top"
+						embed="1"
+						player_id="video_player"
+						enable_api="1"
+						theme="dark"
+						controls="0"
+						autohide="1"
+						autoplay="1"
+						loop="1"
+						/>
 
-				<h1><cms:text constant="header"/></h1>
-				<span><cms:text constant="header_desc"/></span>
-				<a href="#"></a>
 
 				<div class="menu">
 
@@ -35,26 +47,43 @@
 
 				</div>
 
-					<cms:module
-						name="youtube"
-						action="show"
-						text_id="green_top"
-						width="20000"
-						height="900"
-						embed="1"
-						target="video_player"
-						theme="dark"
-						controls="0"
-						autohide="1"
-						autoplay="1"
-						loop="1"
-						/>
+				<div class="content">
+					<h1><cms:text constant="header"/></h1>
+					<span><cms:text constant="header_desc"/></span>
+					<a href="#form"></a>
+				</div>
 
 
 			</header>
+		</cms:desktop>
 
-			<div class="wrap gradient">
-				<div class="form_wrap">
+		<cms:mobile>
+			<header>
+				<div class="content">
+					<h1><cms:text constant="header"/></h1>
+					<span><cms:text constant="header_desc"/></span>
+				</div>
+
+				<div class="menu">
+					<a href="#form"><cms:text constant="order_now"/></a>
+
+					<span class="logo"></span>
+
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+
+					</a>
+
+				</div>
+
+			</header>
+		</cms:mobile>
+
+			<div class="wrap gradient" id="form">
+				<div class="form_wrap" >
 					<h2><cms:text constant="form_title"/></h2>
 					<cms:module
 						name="contact_form"
@@ -88,7 +117,7 @@
 
 			<!-- Product -->
 			<div class="wrap">
-
+			<cms:desktop>
 				<div>
 					<span></span>
 					<span><cms:text constant="product"/></span>
@@ -100,6 +129,20 @@
 					text_id="gauge_article"
 					template="parts/article.xml"
 				/>
+			</cms:desktop>
+			<cms:mobile>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="gauge_article"
+					template="parts/article.xml"
+				/>
+				<div>
+					<span></span>
+					<span><cms:text constant="product"/></span>
+				</div>
+
+			</cms:mobile>
 			</div>
 
 			<!-- Gallery -->
