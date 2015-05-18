@@ -69,7 +69,6 @@ div.wrap.gradient:before {
 	left: 0px;
 	width: 100%;
 	height: 300px;
-	z-index: -1;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -297,9 +296,9 @@ div.about_article p:nth-of-type(4):before {
 div.wrap.white {
 	background-image: url(../images/about/team-working.jpg);
 	background-repeat: no-repeat;
-	background-position:static;
+	background-position:center top;
 	background-attachment: fixed;
-	background-size:1920px 1200px;
+	background-size:cover;
 	min-height: 400px;
 }
 
@@ -374,8 +373,6 @@ div.wrap div.gauge_article p {
 	display: block;
 	line-height: 2em;
 }
-
-
 
 
 /*Gallery*/
@@ -478,6 +475,7 @@ div.system_feature div.articles div:nth-of-type(3):before {
 div.system_feature div.articles div ul {
 	padding: 0px;
 	padding-right: 20px;
+	list-style-type: inherit;
 }
 
 div.system_feature div.articles div ul li {
@@ -494,14 +492,14 @@ div.system_feature div.bottom {
 	margin-top: 50px;
 	background-image: url(../images/system/report.jpg);
 	background-repeat: no-repeat;
-	background-position:left top;
+	background-position:left bottom;
 	background-size: 633px 460px;
 }
 
 div.system_feature div.bottom div {
 	display: inline-block;
 	vertical-align: top;
-	padding-bottom: 160px;
+	padding-bottom: 200px;
 	background-image: url(../images/system/safety-standards.gif);
 	background-repeat: no-repeat;
 	background-position: right bottom;
@@ -879,3 +877,145 @@ footer span a:hover {
 }
 
 
+/*Tablet Version*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+header {
+
+	display: block;
+	text-align: center;
+	position: relative;
+	background-image: url(../images/header/ipad-background-01.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:1024px 768px;
+	min-height: 768px;
+}
+
+header div.content {
+	top:120px;
+}
+
+header div.content h1 {
+	color:#294090;
+	text-shadow:none;
+}
+
+header div.content span {
+	color:#294090;
+	text-shadow:none;
+}
+
+iframe {
+	display: none;
+}
+
+
+a.phone {
+	font-size: 1.2em;
+}
+
+.wrap {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+header div.menu form {
+	padding-left: 5px;
+	padding-right: 5px;
+	opacity: 1;
+}
+
+header div.menu form label {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+header div.menu span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-image: url(../images/header/logo-color.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px auto;
+	width: 150px;
+	height: 80px;
+}
+
+header div.menu form label input {
+	width: 150px;
+}
+
+div.form_wrap:before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 100%;
+	padding-left: 20px;
+	background-image: url(../images/header/system.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 480px 346px;
+	width: 480px;
+	height: 346px;
+
+}
+
+div.form_wrap {
+	width: 430px;
+}
+
+div.wrap.white {
+	background-image: url(../images/about/team-working.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: inherit;
+	min-height: 400px;
+}
+
+div.system_article {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+}
+
+div.wrap div.gauge_article {
+	width: 50%;
+}
+
+
+
+div.system_feature div.bottom {
+  display: block;
+  margin-top: 50px;
+  background-image: url(../images/system/report.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 480px 348px;
+}
+
+div.gold_deal {
+	margin-right: 15px;
+}
+
+div.green_deal {
+	margin-left: 15px;
+}
+
+div.extra_deal p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+}
