@@ -61,6 +61,7 @@ Site.on_load = function() {
 
 			menu.css('background-color','white');
 
+
 		} else {
 
 		    menu.css('background-color','rgba(255, 255, 255, 0.7)');
@@ -69,9 +70,13 @@ Site.on_load = function() {
 
 	$(window).scroll(function(event) {
 		if( $(window).scrollTop() > target1) {
-			form.css('opacity','1');
+			form.css('opacity','1')
+				.css('visibility',"visible");
+
 		} else {
-			form.css('opacity','0');
+			form.css('opacity','0')
+				.css('visibility','hidden');
+
 		}
 	});
 };
