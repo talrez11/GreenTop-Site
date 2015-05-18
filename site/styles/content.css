@@ -895,11 +895,13 @@ header {
 
 header div.content {
 	top:120px;
+	margin-left: -450px;
 }
 
 header div.content h1 {
 	color:#294090;
 	text-shadow:none;
+	width: 900px;
 }
 
 header div.content span {
