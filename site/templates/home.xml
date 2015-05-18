@@ -12,20 +12,6 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 		<cms:desktop>
 			<header>
-				<cms:module
-						name="youtube"
-						action="show"
-						text_id="green_top"
-						embed="1"
-						player_id="video_player"
-						enable_api="1"
-						theme="dark"
-						controls="0"
-						autohide="1"
-						autoplay="1"
-						loop="1"
-						/>
-
 
 				<div class="menu">
 
