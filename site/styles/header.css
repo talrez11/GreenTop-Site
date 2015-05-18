@@ -11,17 +11,24 @@ header {
 	display: block;
 	text-align: center;
 	position: relative;
-	padding:0px calc((100vw - 1200px) / 2);
-	padding-bottom: 56.25%;
-	height: 0;
+	overflow: hidden;
 
 }
 
-header h1 {
+header div.content {
+	display: block;
+	position: absolute;
+	top:150px;
+	left: 50%;
+	margin-left: -350px;
+
+
+}
+
+header div.content h1 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 150px;
 	padding-bottom: 20px;
 	color: white;
 	font-size: 4.8em;
@@ -30,7 +37,7 @@ header h1 {
 	width: 700px;
 }
 
-header > span {
+header div.content  span {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -42,7 +49,7 @@ header > span {
 	position: relative;
 }
 
-header > a {
+header div.content a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -53,15 +60,12 @@ header > a {
 	background-size: 100px 100px;
 	width: 100px;
 	height: 100px;
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	-ms-transform: translateZ(0);
 	transform: translateZ(0);
 	position: relative;
 	-webkit-animation:bounce 1s infinite;
 	-webkit-animation-direction: alternate;
 	-webkit-animation-timing-function: linear;
+	z-index: 50;
 
 }
 
@@ -78,10 +82,6 @@ header div.menu {
 	background-color: rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 	z-index: 10000;
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	-ms-transform: translateZ(0);
 	transform: translateZ(0);
 	overflow: hidden;
 }
@@ -105,6 +105,7 @@ header div.menu form {
 	padding-left: 15px;
 	padding-right: 15px;
 	opacity: 0;
+	visibility: hidden;
 	transition:all 0.3s;
 }
 
@@ -189,10 +190,8 @@ a.phone {
 header iframe,
 header object,
 header embed{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+
+	width: 100vw;
+	height:calc(100vw / 1.77777);
+
 }
