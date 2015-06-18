@@ -1,6 +1,6 @@
 /**
  * Main JavaScript
- * Site Name
+ * Energy POrtal
  *
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
  * Authors:
@@ -48,8 +48,32 @@ Site.is_mobile = function() {
 /**
  * Function called when document and images have been completely loaded.
  */
-Site.on_load = function() {
 
+function dialog() {
+
+	// calling the dialog.
+	var video_dialog = new Dialog();
+
+	// Modify the dialog.
+
+	video_dialog.setTitle(language_handler.getText(null, 'dialog_video_title'));
+	video_dialog.setSize(550, 366);
+
+	$('a.youtube').not('.mobile').click(function(event) {
+
+		// prevent link from working.
+		event.preventDefault();
+
+		// set content from URL and show it.
+		video_dialog.setContentFromURL($(this).attr('href'));
+		video_dialog.showWhenReady();
+		video_dialog.setClearOnClose(true);
+	});
+}
+
+Site.on_load = function() {
+	// Initiate dialog
+	dialog();
 	// Setting fixed menu color
 	var menu = $('header div.menu');
 	var form = $('header div.menu form');
@@ -78,6 +102,14 @@ Site.on_load = function() {
 				.css('visibility','hidden');
 
 		}
+	});
+
+	// handle analytics event
+	$('form').on('analytics-event', function(event, data) {
+		if (!data.error)
+			dataLayer.push({
+            	'event':'leadSent'
+            });
 	});
 };
 
