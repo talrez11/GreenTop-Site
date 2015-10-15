@@ -167,7 +167,7 @@
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="feature4"
+						text_id="faq_article"
 						template="parts/article.xml"
 
 					/>
@@ -179,7 +179,7 @@
 			<!-- Deals Section -->
 			<div class="deals wrap">
 
-				<h2><cms:text constant="deals_title"/></h2>
+<!-- 				<h2><cms:text constant="deals_title"/></h2>
 				<cms:module
 						name="articles"
 						action="show"
@@ -194,7 +194,8 @@
 						text_id="gold_deal"
 						template="parts/article.xml"
 
-					/>
+					/> -->
+
 
 				<cms:module
 						name="articles"
@@ -204,6 +205,17 @@
 
 					/>
 
+				<h2><cms:text constant="bottom_form_title"/></h2>
+				
+				<div class="bottom_form_wrap" >
+					<h2><cms:text constant="form_title"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+					/>
+				</div>
+				
 			</div>
 
 			<div class="wrap blue">
