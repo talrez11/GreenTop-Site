@@ -534,6 +534,15 @@ div.system_feature div.articles div {
 	position: relative;
 }
 
+div.system_feature div.articles div p {
+	display: block;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 700;
+}
+
 div.system_feature div.articles div:before {
 	content: "";
 	position: absolute;
@@ -578,7 +587,7 @@ div.system_feature div.articles div p {
 div.system_feature div.bottom {
 	display: block;
 	padding-bottom: 240px;
-	margin-top: 50px;
+	margin-top: 0px;
 	padding-left: 15px;
 	padding-right: 15px;
 	background-image: url(../images/system/report.jpg);
@@ -589,13 +598,19 @@ div.system_feature div.bottom {
 
 div.system_feature div.bottom div {
 	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	
 	padding-bottom: 100px;
 	background-image: url(../images/system/safety-standards.gif);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: 250px 86px;
-	width: 250px;
+	width: 95%;
+}
 
+div.system_feature div.bottom div h2 { 
+	display: block;
 }
 
 
