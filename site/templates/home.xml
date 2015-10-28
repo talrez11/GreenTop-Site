@@ -179,24 +179,6 @@
 			<!-- Deals Section -->
 			<div class="deals wrap">
 
-<!-- 				<h2><cms:text constant="deals_title"/></h2>
-				<cms:module
-						name="articles"
-						action="show"
-						text_id="green_deal"
-						template="parts/article.xml"
-
-					/>
-
-				<cms:module
-						name="articles"
-						action="show"
-						text_id="gold_deal"
-						template="parts/article.xml"
-
-					/> -->
-
-
 				<cms:module
 						name="articles"
 						action="show"
