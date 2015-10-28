@@ -38,7 +38,7 @@
 				<div class="content">
 					<h1><cms:text constant="header_private"/></h1>
 					<span><cms:text constant="header_desc"/></span>
-					<a href="#form"></a>
+					<a href="#contact"></a>
 				</div>
 
 
@@ -53,7 +53,7 @@
 				</div>
 
 				<div class="menu">
-					<a href="#form"><cms:text constant="order_now"/></a>
+					<a href="#contact"><cms:text constant="order_now"/></a>
 
 					<span class="logo"></span>
 
@@ -70,7 +70,7 @@
 			</header>
 		</cms:mobile>
 
-			<div class="wrap gradient" id="form">
+			<div class="wrap gradient" id="contact">
 				<div class="form_wrap" >
 					<h2><cms:text constant="form_title"/></h2>
 					<cms:module
