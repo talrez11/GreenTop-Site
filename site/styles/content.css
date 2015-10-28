@@ -130,20 +130,35 @@ div.form_wrap {
  	position: relative;
  }
 
- div.form_wrap:before {
- 	content: "";
- 	position: absolute;
- 	bottom:0px;
- 	left: 100%;
- 	padding-left: 100px;
- 	padding-right: 40px;
- 	background-image: url(../images/header/system.png);
- 	background-repeat: no-repeat;
- 	background-position: center center;
- 	background-size: 643px 464px;
- 	width: 643px;
- 	height: 464px;
- }
+div.form_wrap:before {
+	content: "";
+	position: absolute;
+	bottom:0px;
+	left: 100%;
+	padding-left: 100px;
+	padding-right: 40px;
+	background-image: url(../images/header/system.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 643px 464px;
+	width: 643px;
+	height: 464px;
+}
+
+body#private div.form_wrap:before {
+	content: "";
+	position: absolute;
+	bottom:0px;
+	left: 100%;
+	padding-left: 100px;
+	padding-right: 40px;
+	background-image: url(../images/system-home.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 643px 464px;
+	width: 643px;
+	height: 464px;
+}
 
 div.form_wrap h2 {
  	display: block;
@@ -291,6 +306,73 @@ div.about_article p:nth-of-type(4):before {
 	background-position: -150px 0px;
 }
 
+/*Private page about_article_home*/
+div.about_article_home {
+	display: block;
+	text-align: center;
+}
+
+div.about_article_home h2:first-of-type {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width: 900px;
+	color: #2a4191;
+}
+
+div.about_article_home h2:last-of-type {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 950px;
+	color: #50ad42;
+}
+
+div.about_article_home p {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 50px;
+	padding-top: 140px;
+	color:#41484b;
+	width: 160px;
+	position: relative;
+}
+
+div.about_article_home p:before{
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -75px;
+	background-image: url(../images/header/icons-features-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 750px 150px;
+	width: 150px;
+	height: 150px;
+}
+
+div.about_article_home p:nth-of-type(1):before {
+	background-position: -600px 0px;
+}
+
+div.about_article_home p:nth-of-type(2):before {
+	background-position: -450px 0px;
+}
+
+div.about_article_home p:nth-of-type(3):before {
+	background-position: -300px 0px;
+}
+
+div.about_article_home p:nth-of-type(4):before {
+	background-position: -150px 0px;
+}
+
+
 /*System Section*/
 
 div.wrap.white {
@@ -328,6 +410,32 @@ div.system_article ul li{
 	font-size: 1.2em;
 }
 
+div.system_article_home {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: right;
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 750px;
+}
+
+div.system_article_home h2 {
+	display: block;
+	padding-right: 15px;
+	color:#2a4191;
+}
+
+div.system_article_home ul {
+    list-style-type: disc;
+    padding: 10px;
+    padding-right: 35px;
+}
+
+div.system_article_home ul li{
+	padding-top: 2px;
+	font-size: 1.2em;
+}
+
 /*Product*/
 
 div.wrap div:first-of-type {
@@ -346,6 +454,10 @@ div.wrap div:first-of-type span:first-of-type {
 	border-radius: 5px;
 	width: 346px;
 	height: 320px;
+}
+
+body#private div.wrap div:first-of-type span:first-of-type {
+	background-image: url(../images/egauge-home.jpg);
 }
 
 div.wrap div:first-of-type span:last-of-type {
@@ -376,6 +488,31 @@ div.wrap div.gauge_article h2:last-of-type {
 }
 
 div.wrap div.gauge_article p {
+	display: block;
+	line-height: 2em;
+}
+
+div.wrap div.gauge_article_home {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 100px;
+	width: 700px;
+}
+
+div.wrap div.gauge_article_home h2:first-of-type {
+	display: block;
+	padding-bottom: 20px;
+	color:#50ad42;
+}
+
+div.wrap div.gauge_article_home h2:last-of-type {
+	display: block;
+	padding-bottom: 20px;
+	color:#41484b;
+	font-weight: 400;
+}
+
+div.wrap div.gauge_article_home p {
 	display: block;
 	line-height: 2em;
 }
@@ -494,6 +631,10 @@ div.system_feature div.bottom {
 	background-repeat: no-repeat;
 	background-position:left bottom;
 	background-size: 633px 460px;
+}
+
+body#private div.system_feature div.bottom {
+	background-image: url(../images/report-home.jpg);
 }
 
 div.system_feature div.bottom div {
@@ -1025,5 +1166,6 @@ div.extra_deal p {
 	margin-bottom: 10px;
 }
 
-
 }
+
+
