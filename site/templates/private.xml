@@ -61,6 +61,7 @@
 						href="url_Make('', 'private-sector#contact')"
 						cms:eval="href"
 						>
+						<cms:text constant="order_now"/>
 					</a>	
 
 					<span class="logo"></span>
