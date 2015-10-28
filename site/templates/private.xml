@@ -38,13 +38,17 @@
 				<div class="content">
 					<h1><cms:text constant="header_private"/></h1>
 					<span><cms:text constant="header_desc"/></span>
-					<a href="#contact"></a>
+					<a
+						href="url_Make('', 'private-sector#contact')"
+						cms:eval="href"
+						
+						>
+					</a>	
 				</div>
 
 
 			</header>
 		</cms:desktop>
-
 		<cms:mobile>
 			<header>
 				<div class="content">
@@ -53,7 +57,11 @@
 				</div>
 
 				<div class="menu">
-					<a href="#contact"><cms:text constant="order_now"/></a>
+					<a
+						href="url_Make('', 'private-sector#contact')"
+						cms:eval="href"
+						>
+					</a>	
 
 					<span class="logo"></span>
 
