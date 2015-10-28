@@ -1,13 +1,18 @@
 <document>
-
+	<cms:desktop>
 		<img
-			src="$params['image']"
+			src="gallery::getThumbnailById($params['id'], null, 175, Thumbnail::CONSTRAIN_HEIGHT)"
 			alt="$params['name'][$language]"
 			cms:eval="alt,src"
-
 		/>
-
-
-
+	</cms:desktop>
+	
+	<cms:mobile>
+		<img
+			src="gallery::getThumbnailById($params['id'], null, 150, Thumbnail::CONSTRAIN_HEIGHT)"
+			alt="$params['name'][$language]"
+			cms:eval="alt,src"
+		/>
+	</cms:mobile>	
 
 </document>
