@@ -6,7 +6,26 @@
  * Authors: Tal Reznic
  */
 
-@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../images/font/opensanshebrew-light-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../images/font/opensanshebrew-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: bold;
+    font-weight: 700;
+    src: url(../images/font/opensanshebrew-bold-webfont.woff) format('woff');
+}
 
 body {
   font-family: 'open Sans Hebrew' serif;
