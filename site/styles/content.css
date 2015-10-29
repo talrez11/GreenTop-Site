@@ -1029,7 +1029,6 @@ footer span a:hover {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
 header {
-
 	display: block;
 	text-align: center;
 	position: relative;
@@ -1040,15 +1039,27 @@ header {
 	min-height: 768px;
 }
 
+body#private header {
+    background-position: -870px 0px;
+}
+
 header div.content {
 	top:120px;
 	margin-left: -450px;
+}
+
+body#private div.content {
+	top: 100px;
 }
 
 header div.content h1 {
 	color:#294090;
 	text-shadow:none;
 	width: 900px;
+}
+
+body#private header div.content h1 {
+	width: 900px;	
 }
 
 header div.content span {
@@ -1111,7 +1122,10 @@ div.form_wrap:before {
 	background-size: 480px 346px;
 	width: 480px;
 	height: 346px;
+}
 
+body#private div.form_wrap:before {
+	padding-left: 0px;
 }
 
 div.form_wrap {
@@ -1140,6 +1154,14 @@ div.system_article {
 
 div.wrap div.gauge_article {
 	width: 50%;
+}
+
+body#private div.wrap div.gauge_article_home {
+	width: 50%;
+}
+
+body#private div.system_feature div.bottom {
+    background-position: left 100px;	
 }
 
 
