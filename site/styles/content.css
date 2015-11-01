@@ -634,17 +634,18 @@ div.system_feature div.bottom {
 }
 
 body#private div.system_feature div.bottom {
+	display: block;
+	margin-top: 50px;
+	padding-bottom: 80px;
 	background-image: url(../images/report-home.jpg);
+	background-repeat: no-repeat;
+	background-position:left 20px;
+	background-size: 633px 460px;
 }
 
 div.system_feature div.bottom div {
 	display: inline-block;
 	vertical-align: top;
-	padding-bottom: 200px;
-	background-image: url(../images/system/safety-standards.gif);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: 426px 148px;
 	width: 100%;
 }
 
