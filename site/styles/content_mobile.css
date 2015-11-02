@@ -220,6 +220,8 @@ div.wrap.gradient {
 
 body#private div.form_wrap {
 	background-image: url(../images/system-home.jpg);
+	background-size: 250px 250px;
+	padding-bottom: 250px;
 }
 /*  div.form_wrap:before {
 	content: "";
@@ -363,7 +365,7 @@ div.about_article p:before{
 	background-image: url(../images/header/icons-features-sprite.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-	background-size: 750px 150px;
+	background-size: 1050px 150px;
 	width: 150px;
 	height: 150px;
 }
@@ -437,25 +439,29 @@ div.about_article_home p:before{
 	background-image: url(../images/header/icons-features-sprite.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-	background-size: 750px 150px;
+	background-size: 1050px 150px;
 	width: 150px;
 	height: 150px;
 }
 
 div.about_article_home p:nth-of-type(1):before {
-	background-position: -600px 0px;
+	background-position: -900px 0px;
 }
 
 div.about_article_home p:nth-of-type(2):before {
-	background-position: -450px 0px;
+	background-position: -750px 0px;
 }
 
 div.about_article_home p:nth-of-type(3):before {
-	background-position: -300px 0px;
+	background-position: -150px 0px;
 }
 
 div.about_article_home p:nth-of-type(4):before {
-	background-position: -150px 0px;
+	background-position: -450px 0px;
+}
+
+div.about_article_home p:nth-of-type(5):before {
+	background-position: -300px 0px;
 }
 
 /*System Section*/
@@ -753,9 +759,6 @@ div.system_feature div.bottom div {
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	
-	padding-bottom: 100px;
-	background-image: url(../images/system/safety-standards.gif);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: 250px 86px;
