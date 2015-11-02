@@ -139,7 +139,7 @@
 				/>
 				<div>
 					<span></span>
-					<span><cms:text constant="product"/></span>
+					<span><cms:text constant="product_private"/></span>
 				</div>
 
 			</cms:mobile>
